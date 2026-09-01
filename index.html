@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You Cutie ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+.cover{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+h1{
+font-size:38px;
+animation:zoom 2s infinite;
+}
+
+button{
+padding:14px 30px;
+border:0;
+border-radius:30px;
+background:white;
+color:#ff4f81;
+font-size:18px;
+}
+
+.letter{
+display:none;
+margin:20px;
+padding:25px;
+background:white;
+border-radius:20px;
+box-shadow:0 0 20px #777;
+}
+
+.text{
+font-size:17px;
+line-height:1.8;
+white-space:pre-line;
+}
+
+@keyframes zoom{
+50%{transform:scale(1.1);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="cover" id="cover">
+<h1>It's for you Cutie ❤️</h1>
+<button onclick="openLetter()">Open Letter 💌</button>
+</div>
+
+
+<div class="letter" id="letter">
+
+<h2>প্রিয় স্বপ্না ❤️</h2>
+
+<div class="text" id="text"></div>
+
+</div>
+
+
+<script>
+
+let message = `প্রিয় স্বপ্না,
+
+কেমন আছো? আশা করি ভালো আছো।
+
+আজ চিঠি দিবস। তাই তোমাকে পুরোনো দিনের মতো করে কিছু কথা বলতে ইচ
