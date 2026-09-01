@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For You Cutie ❤️</title>
+<title>For Himu ❤️</title>
 
 <style>
 *{
@@ -13,8 +13,9 @@ box-sizing:border-box;
 
 body{
 margin:0;
-font-family:sans-serif;
-background:linear-gradient(135deg,#ff758c,#ff7eb3);
+font-family:"Segoe UI",sans-serif;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+overflow-x:hidden;
 }
 
 .cover{
@@ -23,22 +24,23 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-color:white;
 text-align:center;
+color:white;
 }
 
 .cover h1{
-font-size:38px;
-animation:zoom 2s infinite;
+font-size:40px;
+animation:heart 2s infinite;
 }
 
 button{
-padding:14px 35px;
+padding:15px 35px;
 border:none;
-border-radius:40px;
+border-radius:50px;
+font-size:18px;
 background:white;
 color:#ff4f81;
-font-size:18px;
+box-shadow:0 5px 20px #999;
 }
 
 .letter{
@@ -46,35 +48,38 @@ display:none;
 margin:20px;
 padding:25px;
 background:white;
-border-radius:20px;
-box-shadow:0 0 20px #777;
-animation:fade 1s;
+border-radius:25px;
+box-shadow:0 0 25px rgba(0,0,0,.2);
+animation:show 1.5s;
 }
 
-h2{
+.title{
 text-align:center;
 color:#ff4f81;
+font-size:28px;
 }
 
 .text{
 font-size:17px;
-line-height:1.8;
+line-height:1.9;
 white-space:pre-line;
 color:#333;
 }
 
-@keyframes zoom{
+@keyframes heart{
 50%{
 transform:scale(1.1);
 }
 }
 
-@keyframes fade{
+@keyframes show{
 from{
 opacity:0;
+transform:translateY(40px);
 }
 to{
 opacity:1;
+transform:translateY(0);
 }
 }
 
@@ -84,14 +89,21 @@ opacity:1;
 <body>
 
 <div class="cover" id="cover">
-<h1>It's for you Cutie ❤️</h1>
-<button onclick="openLetter()">Open Letter 💌</button>
+
+<h1>For You Himu ❤️</h1>
+
+<button onclick="openLetter()">
+Open Letter 💌
+</button>
+
 </div>
 
 
 <div class="letter" id="letter">
 
-<h2>প্রিয় স্বপ্না ❤️</h2>
+<div class="title">
+প্রিয় Himu ❤️
+</div>
 
 <div class="text" id="text"></div>
 
@@ -102,22 +114,32 @@ opacity:1;
 
 let message = `কেমন আছো? আশা করি ভালো আছো।
 
-জানি না এই চিঠিটা তোমার হাতে পৌঁছানোর পর তোমার মুখে কেমন একটা হাসি ফুটবে, কিন্তু এই চিঠির প্রতিটা শব্দ আমি মন থেকে লিখছি।
+জানি না এই চিঠিটা পড়ার সময় তোমার মুখে কেমন একটা হাসি ফুটবে, কিন্তু এটুকু জানি—এই চিঠির প্রতিটা শব্দ সত্যি মন থেকে লেখা।
 
-আজ চিঠি দিবস। তাই মনে হলো তোমাকে পুরোনো দিনের মতো করে কিছু কথা বলা যাক।
+জীবনে অনেক মানুষের সাথে পরিচয় হয়, কিন্তু কিছু মানুষ খুব অল্প সময়ের মধ্যেই মনের মধ্যে একটা আলাদা জায়গা করে নেয়। তুমি ঠিক তেমন একজন মানুষ।
 
-স্বপ্না, তোমার যত্ন নেওয়ার অভ্যাস আর তোমার সুন্দর মন সত্যিই অনেক ভালো লাগে।
+তোমার সবচেয়ে সুন্দর একটা দিক হলো—তোমার যত্ন নেওয়ার অভ্যাস। আমি আগে থেকে মেসেজ না দিলেও তুমি নিজে থেকে খোঁজ নাও, কেমন আছি জিজ্ঞেস করো।
 
-তোমার হাসি, তোমার সরলতা আর তোমার মায়া অনেক সুন্দর।
+হয়তো তোমার কাছে এগুলো ছোট ছোট বিষয়, কিন্তু কারো মন ভালো করে দেওয়ার জন্য এই ছোট ছোট যত্নগুলো অনেক বড় একটা অনুভূতি হয়ে যায়।
 
-সবসময় ভালো থেকো। নিজের যত্ন নিও।
+তোমার সাথে কথা বললে একটা শান্তি অনুভব হয়। মনে হয়, কেউ একজন সত্যি মন থেকে আমার ভালো চায়।
 
-তোমার জীবনের সব সুন্দর স্বপ্ন পূরণ হোক।
+আমি জানি, তোমার জীবন পথ সবসময় সহজ ছিল না। নিজের স্বপ্ন আর ভবিষ্যতের জন্য তুমি অনেক পরিশ্রম করছো, অনেক সংগ্রাম করছো।
 
-চিঠি দিবসের অনেক শুভেচ্ছা ❤️
+কিন্তু আমার বিশ্বাস—যে মানুষ এত ধৈর্য নিয়ে নিজের লক্ষ্যের দিকে এগিয়ে যেতে পারে, সে একদিন অবশ্যই সফল হবে।
+
+আমি মন থেকে চাই, তোমার জীবনের প্রতিটা স্বপ্ন পূরণ হোক। তোমার পরিশ্রমের প্রতিটা মুহূর্ত একদিন তোমার সাফল্যের গল্প হয়ে ফিরে আসুক।
+
+নিজের যত্ন নিতে ভুলে যেও না। নিজের হাসি, নিজের স্বপ্ন আর নিজের সুখের কথাও ভাববে।
+
+তোমার একটা মেসেজ দেখলে মন ভালো হয়ে যায়, তোমার সাথে কথা বললেও এক ধরনের মানসিক শান্তি পাওয়া যায়।
+
+ভালো থেকো Himu।
+
+সবসময় এমন সুন্দর মনের মানুষ হয়ে থেকো।
 
 ইতি,
-যে তোমার হাসিকে অনেক মূল্য দেয়।`;
+যে তোমার যত্ন, তোমার হাসি আর তোমার সুন্দর মনকে অনেক মূল্য দেয়। ❤️`;
 
 
 let i=0;
@@ -142,7 +164,7 @@ document.getElementById("text").innerHTML += message.charAt(i);
 
 i++;
 
-setTimeout(typeWriter,40);
+setTimeout(typeWriter,35);
 
 }
 
