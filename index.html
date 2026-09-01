@@ -1,31 +1,154 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You Cutie ❤️</title>
+
+<style>
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+.cover{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.cover h1{
+font-size:38px;
+animation:zoom 2s infinite;
+}
+
+button{
+padding:14px 35px;
+border:none;
+border-radius:40px;
+background:white;
+color:#ff4f81;
+font-size:18px;
+}
+
+.letter{
+display:none;
+margin:20px;
+padding:25px;
+background:white;
+border-radius:20px;
+box-shadow:0 0 20px #777;
+animation:fade 1s;
+}
+
+h2{
+text-align:center;
+color:#ff4f81;
+}
+
+.text{
+font-size:17px;
+line-height:1.8;
+white-space:pre-line;
+color:#333;
+}
+
+@keyframes zoom{
+50%{
+transform:scale(1.1);
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cover" id="cover">
+<h1>It's for you Cutie ❤️</h1>
+<button onclick="openLetter()">Open Letter 💌</button>
+</div>
+
+
+<div class="letter" id="letter">
+
+<h2>প্রিয় স্বপ্না ❤️</h2>
+
+<div class="text" id="text"></div>
+
+</div>
+
+
 <script>
-let message = `প্রিয় স্বপ্না,
 
-কেমন আছো? আশা করি ভালো আছো।
+let message = `কেমন আছো? আশা করি ভালো আছো।
 
-আজ চিঠি দিবস। তাই তোমাকে কিছু কথা বলতে ইচ্ছে হলো।
+জানি না এই চিঠিটা তোমার হাতে পৌঁছানোর পর তোমার মুখে কেমন একটা হাসি ফুটবে, কিন্তু এই চিঠির প্রতিটা শব্দ আমি মন থেকে লিখছি।
 
-তোমার সুন্দর মন, তোমার যত্ন আর তোমার হাসি সত্যিই অনেক সুন্দর।
+আজ চিঠি দিবস। তাই মনে হলো তোমাকে পুরোনো দিনের মতো করে কিছু কথা বলা যাক।
 
-সবসময় ভালো থেকো।
-নিজের যত্ন নিও।
+স্বপ্না, তোমার যত্ন নেওয়ার অভ্যাস আর তোমার সুন্দর মন সত্যিই অনেক ভালো লাগে।
+
+তোমার হাসি, তোমার সরলতা আর তোমার মায়া অনেক সুন্দর।
+
+সবসময় ভালো থেকো। নিজের যত্ন নিও।
+
+তোমার জীবনের সব সুন্দর স্বপ্ন পূরণ হোক।
+
+চিঠি দিবসের অনেক শুভেচ্ছা ❤️
 
 ইতি,
-যে তোমার হাসিকে অনেক মূল্য দেয় ❤️`;
+যে তোমার হাসিকে অনেক মূল্য দেয়।`;
 
-let i = 0;
+
+let i=0;
+
 
 function openLetter(){
-    document.getElementById("cover").style.display = "none";
-    document.getElementById("letter").style.display = "block";
-    typeWriter();
+
+document.getElementById("cover").style.display="none";
+
+document.getElementById("letter").style.display="block";
+
+typeWriter();
+
 }
 
+
 function typeWriter(){
-    if(i < message.length){
-        document.getElementById("text").innerHTML += message.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
-    }
+
+if(i < message.length){
+
+document.getElementById("text").innerHTML += message.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,40);
+
 }
+
+}
+
 </script>
+
+</body>
+</html>
